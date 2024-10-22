@@ -16,16 +16,25 @@ otherwise return false */
 
 
 function isValidPassword(username, password) {
-    if (password.includes(username) || password.includes(" ")) {
-        alert("try again");
-        return false 
-    } else {
-        alert("well done!");
-        return true  
-        
+    if (password.length < 8) {
+        console.log("try again!");
+        return false;
     }
+    if (password.includes(username)) {
+        console.log("rty again");
+        return false 
+    } 
+    if (password.includes(" ")) {
+        console.log("try again!");
+        
+        return false;
+    } // If all conditions are met;
+    console.log("well done!");
+    
+        return true;
+    
     
 }
 
 
-isValidPassword("abece","sfsdsf");
+isValidPassword("abece","sfsdsfutu");
