@@ -17,13 +17,15 @@ otherwise return false */
 
 function isValidPassword(username, password) {
     if (password.includes(username) || password.includes(" ")) {
-        alert("Try again");
+        alert("try again");
+        return false 
     } else {
-        console.log("Done!");
+        alert("well done!");
+        return true  
         
     }
     
 }
 
 
-isValidPassword("abece"," sfsdsf");
+isValidPassword("abece","sfsdsf");
