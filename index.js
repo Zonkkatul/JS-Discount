@@ -22,7 +22,7 @@ function isValidPassword(username, password) {
     }
     if (password.includes(username)) {
         console.log("rty again");
-        return false 
+        return false;
     } 
     if (password.includes(" ")) {
         console.log("try again!");
