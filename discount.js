@@ -1,5 +1,4 @@
-const price = prompt("Enter your price");
-const discount = price * 0.10;
-const reducedPrice = price - discount;
-
-console.log(`New price is: ${reducedPrice}`);
+let price = prompt("Enter your price:");
+let newPrice = Number(price);
+let reducedPrice = newPrice - (newPrice * 0.10)
+console.log(`New price is: $ ${reducedPrice}`);
